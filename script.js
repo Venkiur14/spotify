@@ -51,7 +51,7 @@ async function getsongs() {
 // getsongs()
 
 async function main() {
-    songs = ["http://Bajrang_Baan.mp3", "http://spotifywebby.freewebhostmost.com/songs/Ganpati_Aarti.mp3","http://spotifywebby.freewebhostmost.com/songs/Krishna_Main.mp3", "http://spotifywebby.freewebhostmost.com/songs/Arere_Avala_Naguva.mp3", "http://spotifywebby.freewebhostmost.com/songs/Dwapara.mp3", "http://spotifywebby.freewebhostmost.com/songs/Good_Morning.mp3", "http://Aasa_Kooda.mp3", "http://spotifywebby.freewebhostmost.com/songs/Chaleya.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Deva_Deva.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Hawayein.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Heeriye.mp3" ,  "http://spotifywebby.freewebhostmost.com/songs/Raataan_Lambiyan.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Innunu_Bekagide.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Kavithe_Kavithe.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Kesariya_Rangu.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Marete_Hodenu.mp3"  ]
+    songs = ["http://Bajrang_Baan.mp3", "http://Ganpati_Aarti.mp3","http://Krishna_Main.mp3", "http://Arere_Avala_Naguva.mp3", "http://Dwapara.mp3", "http://Good_Morning.mp3", "http://Aasa_Kooda.mp3", "http://Chaleya.mp3" , "http://Deva_Deva.mp3" , "http://Hawayein.mp3" , "http://Heeriye.mp3" ,  "http://Raataan_Lambiyan.mp3" , "http://Innunu_Bekagide.mp3" , "http://Kavithe_Kavithe.mp3" , "http://Kesariya_Rangu.mp3" , "http://Marete_Hodenu.mp3"  ]
     console.log(songs)
     palymusic(songs[0], true)
 
