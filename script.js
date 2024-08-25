@@ -148,6 +148,7 @@ async function main() {
 
     next.addEventListener("click", () => {
         console.log("nxt")
+        console.log(cursong.src)
         // console.log(cursong.src.split("/").slice(-1)[0].split(".")[0])
         let index = songs.indexOf(cursong.src)
         if (index + 1 < songs.length) {
