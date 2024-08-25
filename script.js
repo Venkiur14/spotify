@@ -22,11 +22,11 @@ const palymusic = (track, pause = false) => {
     }
     else {
 
-        cursong.src = "http://spotifywebby.freewebhostmost.com/songs/" + track + ".mp3"
+        cursong.src = track + ".mp3"
     }
     if (!pause) {
         cursong.play()
-        play.src = "img/pause.svg"
+        play.src = "pause.svg"
     }
     if (track.startsWith("http")) {
 
@@ -51,7 +51,7 @@ async function getsongs() {
 // getsongs()
 
 async function main() {
-    songs = ["http://spotifywebby.freewebhostmost.com/songs/Bajrang_Baan.mp3", "http://spotifywebby.freewebhostmost.com/songs/Ganpati_Aarti.mp3","http://spotifywebby.freewebhostmost.com/songs/Krishna_Main.mp3", "http://spotifywebby.freewebhostmost.com/songs/Arere_Avala_Naguva.mp3", "http://spotifywebby.freewebhostmost.com/songs/Dwapara.mp3", "http://spotifywebby.freewebhostmost.com/songs/Good_Morning.mp3", "http://spotifywebby.freewebhostmost.com/songs/Aasa_Kooda.mp3", "http://spotifywebby.freewebhostmost.com/songs/Chaleya.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Deva_Deva.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Hawayein.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Heeriye.mp3" ,  "http://spotifywebby.freewebhostmost.com/songs/Raataan_Lambiyan.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Innunu_Bekagide.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Kavithe_Kavithe.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Kesariya_Rangu.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Marete_Hodenu.mp3"  ]
+    songs = ["http://Bajrang_Baan.mp3", "http://spotifywebby.freewebhostmost.com/songs/Ganpati_Aarti.mp3","http://spotifywebby.freewebhostmost.com/songs/Krishna_Main.mp3", "http://spotifywebby.freewebhostmost.com/songs/Arere_Avala_Naguva.mp3", "http://spotifywebby.freewebhostmost.com/songs/Dwapara.mp3", "http://spotifywebby.freewebhostmost.com/songs/Good_Morning.mp3", "http://Aasa_Kooda.mp3", "http://spotifywebby.freewebhostmost.com/songs/Chaleya.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Deva_Deva.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Hawayein.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Heeriye.mp3" ,  "http://spotifywebby.freewebhostmost.com/songs/Raataan_Lambiyan.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Innunu_Bekagide.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Kavithe_Kavithe.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Kesariya_Rangu.mp3" , "http://spotifywebby.freewebhostmost.com/songs/Marete_Hodenu.mp3"  ]
     console.log(songs)
     palymusic(songs[0], true)
 
@@ -83,12 +83,12 @@ async function main() {
 
     play.addEventListener("click", () => {
         if (cursong.paused) {
-            play.src = "img/pause.svg"
+            play.src = "pause.svg"
             cursong.play()
         }
         else {
             cursong.pause()
-            play.src = "img/play.svg"
+            play.src = "play.svg"
         }
     })
 
@@ -177,12 +177,12 @@ async function main() {
     document.querySelector(".volume>img").addEventListener("click",e=>{
         console.log(e.target)
         if(e.target.src.includes("img/volume.svg")){
-            e.target.src= e.target.src.replace("img/volume.svg","img/mute.svg")
+            e.target.src= e.target.src.replace("volume.svg","mute.svg")
             cursong.volume=0
             document.querySelector(".range").getElementsByTagName("input")[0].value=0
         }
         else{
-            e.target.src= e.target.src.replace("img/mute.svg","img/volume.svg")
+            e.target.src= e.target.src.replace("mute.svg","volume.svg")
             cursong.volume=.10
             document.querySelector(".range").getElementsByTagName("input")[0].value=10
         }
