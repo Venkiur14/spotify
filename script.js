@@ -52,7 +52,7 @@ async function getsongs() {
 // getsongs()
 
 async function main() {
-    songs = ["http://Bajrang_Baan.mp3", "http://Ganpati_Aarti.mp3","http://Krishna_Main.mp3", "http://Arere_Avala_Naguva.mp3", "http://Dwapara.mp3", "http://Good_Morning.mp3", "http://Aasa_Kooda.mp3", "http://Chaleya.mp3" , "http://Deva_Deva.mp3" , "http://Hawayein.mp3" , "http://Heeriye.mp3" ,  "http://Raataan_Lambiyan.mp3" , "http://Innunu_Bekagide.mp3" , "http://Kavithe_Kavithe.mp3" , "http://Kesariya_Rangu.mp3" , "http://Marete_Hodenu.mp3"  ]
+    songs = ["Bajrang_Baan.mp3", "Ganpati_Aarti.mp3","Krishna_Main.mp3", "Arere_Avala_Naguva.mp3", "Dwapara.mp3", "Good_Morning.mp3", "Aasa_Kooda.mp3", "Chaleya.mp3" , "Deva_Deva.mp3" , "Hawayein.mp3" , "Heeriye.mp3" ,  "Raataan_Lambiyan.mp3" , "Innunu_Bekagide.mp3" , "Kavithe_Kavithe.mp3" , "Kesariya_Rangu.mp3" , "Marete_Hodenu.mp3"  ]
     console.log(songs)
     palymusic(songs[0], true)
 
