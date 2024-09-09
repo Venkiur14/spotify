@@ -230,7 +230,7 @@ async function main() {
 
     document.getElementById("card3").addEventListener("click",e=>{
         document.querySelector(".songinfo").innerHTML =`${songs[6].split("/").slice(-1)[0].split(".").slice(0)[0]}`
-        palymusic(songs[16].split("/").slice(-1)[0].split(".").slice(0)[0])
+        palymusic(songs[6].split("/").slice(-1)[0].split(".").slice(0)[0])
     })
     document.getElementById("card4").addEventListener("click",e=>{
         document.querySelector(".songinfo").innerHTML =`${songs[12].split("/").slice(-1)[0].split(".").slice(0)[0]}`
