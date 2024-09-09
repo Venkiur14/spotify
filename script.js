@@ -68,7 +68,7 @@ async function main() {
     Array.from(document.querySelector(".songlist").getElementsByTagName("li")).forEach(e => {
         e.addEventListener("click", element => {
             const eli = e.textContent.trim()
-            console.log(eli
+            console.log(eli)
             palymusic(eli)
 
 
