@@ -19,6 +19,7 @@ const palymusic = (track, pause = false) => {
     // let audio=new Audio("http://spotifywebby.freewebhostmost.com/songs/"+track+".mp3")
     if (track.startsWith("http")) {
         cursong.src = track
+        console.log(track)
     }
     else {
 
@@ -67,6 +68,7 @@ async function main() {
     Array.from(document.querySelector(".songlist").getElementsByTagName("li")).forEach(e => {
         e.addEventListener("click", element => {
             const eli = e.textContent.trim()
+            console.log(eli
             palymusic(eli)
 
 
