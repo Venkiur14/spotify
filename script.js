@@ -17,19 +17,19 @@ function convertSecondsToMinutes(seconds) {
 
 const palymusic = (track, pause = false) => {
     // let audio=new Audio("http://spotifywebby.freewebhostmost.com/songs/"+track+".mp3")
-    if (track.startsWith("http")) {
+    if (track.startsWith("https")) {
         cursong.src = track
         console.log(track)
     }
     else {
 
-        cursong.src = track + ".mp3"
+        cursong.src ="https://venkiur14.github.io/spotify/"+ track + ".mp3"
     }
     if (!pause) {
         cursong.play()
         play.src = "pause.svg"
     }
-    if (track.startsWith("http")) {
+    if (track.startsWith("https")) {
 
         document.querySelector(".songinfo").innerHTML = "Bajrang_Baan"
     }
@@ -52,7 +52,7 @@ async function getsongs() {
 // getsongs()
 
 async function main() {
-    songs = ["Bajrang_Baan.mp3", "Ganpati_Aarti.mp3","Krishna_Main.mp3", "Arere_Avala_Naguva.mp3", "Dwapara.mp3", "Good_Morning.mp3", "Aasa_Kooda.mp3", "Chaleya.mp3" , "Deva_Deva.mp3" , "Hawayein.mp3" , "Heeriye.mp3" ,  "Raataan_Lambiyan.mp3" , "Innunu_Bekagide.mp3" , "Kavithe_Kavithe.mp3" , "Kesariya_Rangu.mp3" , "Marete_Hodenu.mp3"  ]
+    songs = ["https://venkiur14.github.io/spotify/Bajrang_Baan.mp3", "https://venkiur14.github.io/spotify/Ganpati_Aarti.mp3","https://venkiur14.github.io/spotify/Krishna_Main.mp3", "https://venkiur14.github.io/spotify/Arere_Avala_Naguva.mp3", "https://venkiur14.github.io/spotify/Dwapara.mp3", "https://venkiur14.github.io/spotify/Good_Morning.mp3", "https://venkiur14.github.io/spotify/Aasa_Kooda.mp3", "https://venkiur14.github.io/spotify/Chaleya.mp3" , "https://venkiur14.github.io/spotify/Deva_Deva.mp3" , "https://venkiur14.github.io/spotify/Hawayein.mp3" , "https://venkiur14.github.io/spotify/Heeriye.mp3" ,  "https://venkiur14.github.io/spotify/Raataan_Lambiyan.mp3" , "https://venkiur14.github.io/spotify/Innunu_Bekagide.mp3" , "https://venkiur14.github.io/spotify/Kavithe_Kavithe.mp3" , "https://venkiur14.github.io/spotify/Kesariya_Rangu.mp3" , "https://venkiur14.github.io/spotify/Marete_Hodenu.mp3"  ]
     console.log(songs)
     palymusic(songs[0], true)
 
@@ -104,7 +104,7 @@ async function main() {
         if (cursong.currentTime == cursong.duration){
             console.log("full")
             console.log(document.querySelector(".songinfo").innerHTML)
-            let naam="http://spotifywebby.freewebhostmost.com/songs/"+document.querySelector(".songinfo").innerHTML+".mp3"
+            let naam="https://venkiur14.github.io/spotify/"+document.querySelector(".songinfo").innerHTML+".mp3"
             let sno=songs.indexOf(naam)
             if(sno<songs.length){
                 palymusic(songs[sno+1])
